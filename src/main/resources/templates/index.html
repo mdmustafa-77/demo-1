@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<title>SDP PROJECT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" th:href="@{/css/bootstrap1.min.css}">
+<link rel="stylesheet" th:href="@{/css/all.min.css}">
+<link rel="stylesheet" th:href="@{/css/templatemo-style.css}">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>TOUR IN</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Services</a>
+      <a href="#about" class="w3-bar-item w3-button">About us</a>
+      <a th:href="@{/contactus}" class="w3-bar-item w3-button">Contact us</a>
+      <a th:href="@{/logout}" class="w3-bar-item w3-button">Logout</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="main.jpg" alt="Architecture" width="1500" height="600">
+  <div class="w3-display-middle w3-margin-top w3-center">
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Services</h3>
+  </div>
+
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+      <figure class="effect-ming tm-video-item">
+        <img th:src="@{mon.jpg}" alt="Image" class="w3-image"  style="width:100%">
+          <figcaption class="d-flex align-items-center justify-content-center">
+             <h2>HISTORICAL</h2>
+            <a th:href="@{/monuments}">View more</a>
+           </figcaption>                    
+        </figure>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" style="margin-left: 40%;margin-top: -19%;">
+      <figure class="effect-ming tm-video-item">
+        <img th:src="@{mon3.jpg}" alt="Image" class="img-fluid">
+          <figcaption class="d-flex align-items-center justify-content-center">
+             <h2>INDIAN HERITAGE</h2>
+            <a th:href="@{/culture}">View more</a>
+           </figcaption>                    
+        </figure>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5" style="float:right;margin-top: -19%;">
+      <figure class="effect-ming tm-video-item">
+        <img th:src="@{photo_2021-11-30_09-33-15.jpg}" alt="Image" width=200% class="img-fluid">
+          <figcaption class="d-flex align-items-center justify-content-center">
+             <h2>CULTURE</h2>
+            <a th:href="@{/culture}">View more</a>
+           </figcaption>                    
+        </figure>
+</div>
+
+   <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>This website motivate the people to get interest in the Indian Culture and Heritage,  Historical Places and Famous Monuments different Indian Culture and Heritage,  Historical Places and Famous Monuments .
+Through our exceptionally curated occasion bundles, we need to take you on an adventure where you personally enjoy the stunning magnificence of Indain and it is<br>far-off terrains. We need you to observe sensational scenes that are a long way past your creative ability.
+The powerful inclination of Indian voyagers to travel more nowadays is something that keeps us inspired to satisfy our vacation necessities. Our vision to give you a consistent occasion encounter makes us one of the main visit administrators in the regularly extending travel industry.
+To guarantee that you have a satisfying occasion and healthy encounters, all our vacation administrations are available to your no matter what. On your universal occasion, we guarantee that you are very much outfitted with outside trade (Forex Cards, Currency Notes), visa, and travel protection.
+
+We are the pioneers of outside trade in America and booking forex online is basic and advantageous with us.
+
+Our online visa administrations are exceptional and make the bulky procedure of booking visas a cake stroll for clients. We likewise give exceptional visa, forex, and travel protection and outside settlement administrations for understudies voyaging abroad for study.
+
+Regardless of whether it’s reserving flights or inns for your movement, COmpany Name offers everything under one umbrella. We likewise have journey occasions for individuals who are searching for solace and reasonable extravagance.
+We offer the best limits on our top-rated visit bundles to clients who pick our viable administrations over and over. How about we remind you indeed that we don’t expect to be your visit and travel specialists; we endeavor to be your vacation accomplices until the end of time.
+
+We’re a worker-claimed travel organization secured by our qualities, trustworthiness, and commitment to client benefit.
+
+Our honor-winning organization reliably positions as a standout amongst other offices in the nation (Travel Weekly, Business Travel Weekly), and is the best individual from the renowned Signature Travel Network, an overall association enabling us to give our clients unmatched advantages.
+Fulfilled workers lead to fulfilled clients. We know the development and accomplishment of our organization relies on satisfying our customer’s needs each day. That is additionally our guarantee. 
+Organization Name’ is effectively connected with the Airlines and IATA. As individuals from IATA”s APJC (Agency Program Joint Council)we banter on issues on Airline rehearses. ‘Organization Name’s’ dynamic Airlines Council interfaces ‘Organization Name’ with Domestic and International Airlines.
+
+‘Organization Name’ works intimately with the Ministry of Tourism, Government of America. We effectively take an interest in the Tourism Meetings gathered by the Government. We are effectively connected with State Tourism  
+    </p>
+  </div>
+
+ 
+  
+<!-- Image of location/map -->
+<div class="w3-container">
+  <img src="down.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="" title="W3.CSS" target="_blank" class="w3-hover-text-green">team 285</a></p>
+</footer>
+
+</body>
+</html>
